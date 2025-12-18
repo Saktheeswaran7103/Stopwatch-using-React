@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: "Segoe UI", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+}
+
+.display {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+button {
+    flex: 1;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* START – GREEN */
+.start-button {
+    background: #2ecc71;
+}
+
+.start-button:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+
+/* STOP – RED */
+.stop-button {
+    background: #e74c3c;
+}
+
+.stop-button:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* RESET – BLUE */
+.reset-button {
+    background: #3498db;
+}
+
+.reset-button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
